@@ -81,3 +81,9 @@ Understand how the database executes your queries:
 
 ```sql
 EXPLAIN SELECT * FROM users WHERE email = 'someone@example.com';
+```
+
+**Red Flags:**
+- Sequential Scan (Seq Scan) on large tables.
+- High row estimates.
+- Nested Loop joins on big datasets.
